@@ -3,7 +3,12 @@ import Navbar from './Navbar';
 import Hero from './Hero';
 import Services from './Services';
 import Industries from './Industries';
+import WhyChooseUs from './WhyChooseUs';
+import StatisticsCounter from './StatisticsCounter';
+import ContactForm from './ContactForm';
+import Footer from './Footer';
 import WhatsAppButton from './WhatsAppButton';
+
 
 const LandingPage = () => {
   return (
@@ -12,6 +17,11 @@ const LandingPage = () => {
       <Hero />
       <Services />
       <Industries />
+      <WhyChooseUs />
+      <StatisticsCounter />
+      <ContactForm />
+   
+      <Footer />
       <WhatsAppButton />
     </div>
   );
