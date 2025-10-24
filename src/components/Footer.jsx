@@ -36,8 +36,8 @@ const Footer = () => {
             <h4>Contact Info</h4>
             <div className="contact-info">
               <p>📧 yashodaconsultant699@gmail.com</p>
-              <p>📞 +919006943294</p>
               <p>📞 +919625120724</p>
+              <p>📞 +919006943294</p>
               <p>📍  Delhi</p>
             </div>
             <div className="social-links">
@@ -49,7 +49,7 @@ const Footer = () => {
         </div>
         
         <div className="footer-bottom">
-          <p>&copy; 2024 Yashoda Edge Consulting. All rights reserved.</p>
+          <p>&copy; 2025 Yashoda Edge Consulting. All rights reserved.</p>
           <div className="footer-links">
             <a href="#privacy">Privacy Policy</a>
             <a href="#terms">Terms of Service</a>

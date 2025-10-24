@@ -1083,4 +1083,279 @@ oter Styles */
     .email-form-container {
         padding: 30px 20px;
     }
+}/*
+ Team Section Styles */
+.team {
+    padding: 100px 20px;
+    background: var(--white);
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.team-card {
+    background: var(--white);
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-fast);
+    position: relative;
+}
+
+.team-card:hover {
+    transform: translateY(-10px);
+    box-shadow: var(--shadow-lg);
+}
+
+.team-image-container {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+}
+
+.team-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform var(--transition-fast);
+}
+
+.team-card:hover .team-image {
+    transform: scale(1.1);
+}
+
+.team-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(135deg, rgba(76, 175, 80, 0.9), rgba(255, 183, 0, 0.9));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity var(--transition-fast);
+}
+
+.team-card:hover .team-overlay {
+    opacity: 1;
+}
+
+.team-social {
+    display: flex;
+    gap: 15px;
+}
+
+.social-link {
+    width: 50px;
+    height: 50px;
+    background: var(--white);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 1.2rem;
+    transition: all var(--transition-fast);
+    transform: translateY(20px);
+}
+
+.team-card:hover .social-link {
+    transform: translateY(0);
+}
+
+.social-link:hover {
+    transform: scale(1.1);
+    box-shadow: var(--shadow-md);
+}
+
+.team-info {
+    padding: 30px 25px;
+    text-align: center;
+}
+
+.team-name {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--primary-dark);
+    margin-bottom: 8px;
+}
+
+.team-position {
+    font-size: 1rem;
+    color: var(--primary-green);
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+.team-bio {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+}
+
+.team-contact {
+    border-top: 1px solid #eee;
+    padding-top: 15px;
+}
+
+.contact-phone {
+    color: var(--primary-green);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color var(--transition-fast);
+}
+
+.contact-phone:hover {
+    color: var(--primary-dark);
+}
+
+.phone-link {
+    background: var(--whatsapp-green) !important;
+    color: var(--white) !important;
+}
+
+/* Desktop (1920px+) - Cards side-by-side */
+@media (min-width: 1920px) {
+    .team-grid {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 40px;
+    }
+    
+    .team-image-container {
+        height: 350px;
+    }
+    
+    .team-info {
+        padding: 35px 30px;
+    }
+}
+
+/* Laptop (1366px - 1920px) - Layout maintains integrity */
+@media (min-width: 1366px) and (max-width: 1919px) {
+    .team-grid {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 35px;
+    }
+    
+    .team-image-container {
+        height: 320px;
+    }
+}
+
+/* Tablet (768px - 1024px) - Cards may stack or remain side-by-side */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .team {
+        padding: 80px 20px;
+    }
+    
+    .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 25px;
+    }
+    
+    .team-image-container {
+        height: 280px;
+    }
+    
+    .team-info {
+        padding: 25px 20px;
+    }
+    
+    .social-link {
+        width: 45px;
+        height: 45px;
+        font-size: 1.1rem;
+    }
+    
+    /* Touch-friendly buttons */
+    .contact-phone {
+        padding: 8px 12px;
+        border-radius: 6px;
+        background: var(--card-bg);
+        display: inline-block;
+        margin-top: 5px;
+    }
+}
+
+/* Mobile (320px - 767px) - Single column layout */
+@media (max-width: 767px) {
+    .team {
+        padding: 60px 15px;
+    }
+    
+    .team-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+    
+    .team-card {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+    
+    .team-image-container {
+        height: 250px;
+    }
+    
+    .team-info {
+        padding: 20px 15px;
+    }
+    
+    .team-name {
+        font-size: 1.2rem;
+    }
+    
+    .team-position {
+        font-size: 0.9rem;
+    }
+    
+    .team-bio {
+        font-size: 0.9rem;
+        margin-bottom: 15px;
+    }
+    
+    .social-link {
+        width: 40px;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    /* Phone numbers clickable and prominent */
+    .contact-phone {
+        background: var(--primary-green);
+        color: var(--white);
+        padding: 10px 15px;
+        border-radius: 8px;
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .contact-phone:hover {
+        background: #45a049;
+        color: var(--white);
+    }
+}
+
+/* Extra small mobile (320px and below) */
+@media (max-width: 320px) {
+    .team-card {
+        margin: 0 10px;
+    }
+    
+    .team-image-container {
+        height: 220px;
+    }
+    
+    .team-info {
+        padding: 15px 10px;
+    }
 }
