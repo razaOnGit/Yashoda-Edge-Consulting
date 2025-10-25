@@ -7,7 +7,7 @@ const Team = () => {
             name: 'Mr. Ritesh Kumar Bharti',
             position: 'Founder & CEO',
             phone: '+91 9625120724',
-            email: 'bhartiritesh256@gmail.com',
+            email: 'bhartiritesh94@gmail.com',
             linkedin: 'https://www.linkedin.com/in/ritesh-bharti-40367a244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
             image: '/ritesh.jpg',
             description: 'Visionary leader with 10+ years of expertise in recruitment and workforce solutions across India.'
@@ -19,7 +19,7 @@ const Team = () => {
             phone: '+91 9006943294',
             email: 'nihalsrivastava.ns@gmail.com',
             linkedin: 'https://www.linkedin.com/in/nihal-srivastava-017357301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-            image: '/Nihal.jpg',
+            image: '/nihal.jpg',
             description: 'Strategic director driving innovation in comprehensive staffing and recruitment solutions.'
         }
     ];

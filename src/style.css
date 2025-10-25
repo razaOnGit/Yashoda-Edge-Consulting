@@ -222,6 +222,27 @@ h6 {
     z-index: 2;
 }
 
+.company-info {
+    margin-bottom: 30px;
+}
+
+.company-name {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--white);
+    margin-bottom: 10px;
+    font-family: var(--font-heading);
+}
+
+.company-tagline {
+    font-size: 1.1rem;
+    color: var(--accent-gold);
+    font-weight: 500;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
 .hero h1 {
     font-size: 3.5rem;
     font-weight: 800;
@@ -571,6 +592,14 @@ h6 {
         font-size: 2rem;
     }
 
+    .company-name {
+        font-size: 2rem;
+    }
+
+    .company-tagline {
+        font-size: 1rem;
+    }
+
     .hero h1 {
         font-size: 2.5rem;
     }
@@ -606,6 +635,14 @@ h6 {
 
     .navbar {
         padding: 10px 15px;
+    }
+
+    .company-name {
+        font-size: 1.8rem;
+    }
+
+    .company-tagline {
+        font-size: 0.95rem;
     }
 
     .hero h1 {
@@ -674,8 +711,9 @@ h6 {
 
 .slide-in-right {
     animation: slideInFromRight 0.8s ease-out;
-}/* Fo
-oter Styles */
+}
+
+/* Footer Styles */
 .footer {
     background: var(--primary-dark);
     color: var(--text-light);
@@ -914,24 +952,24 @@ oter Styles */
     .form-row {
         grid-template-columns: 1fr;
     }
-    
+
     .contact-form {
         padding: 30px 20px;
     }
-    
+
     .footer-bottom {
         flex-direction: column;
         text-align: center;
     }
-    
+
     .stats-grid {
         grid-template-columns: repeat(2, 1fr);
     }
-    
+
     .stat-number {
         font-size: 2.5rem;
     }
-    
+
     .features-grid {
         grid-template-columns: 1fr;
     }
@@ -941,7 +979,9 @@ oter Styles */
     .stats-grid {
         grid-template-columns: 1fr;
     }
-}/* Email
+}
+
+/* Email
  Section Styles */
 .email-section {
     padding: 100px 20px;
@@ -1070,20 +1110,22 @@ oter Styles */
         grid-template-columns: 1fr;
         gap: 40px;
     }
-    
+
     .email-info {
         padding-right: 0;
         text-align: center;
     }
-    
+
     .email-title {
         font-size: 2rem;
     }
-    
+
     .email-form-container {
         padding: 30px 20px;
     }
-}/*
+}
+
+/*
  Team Section Styles */
 .team {
     padding: 100px 20px;
@@ -1121,8 +1163,10 @@ oter Styles */
 .team-image {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: contain;
+    object-position: center;
     transition: transform var(--transition-fast);
+    background: var(--card-bg);
 }
 
 .team-card:hover .team-image {
@@ -1228,11 +1272,11 @@ oter Styles */
         grid-template-columns: repeat(4, 1fr);
         gap: 40px;
     }
-    
+
     .team-image-container {
         height: 350px;
     }
-    
+
     .team-info {
         padding: 35px 30px;
     }
@@ -1244,7 +1288,7 @@ oter Styles */
         grid-template-columns: repeat(3, 1fr);
         gap: 35px;
     }
-    
+
     .team-image-container {
         height: 320px;
     }
@@ -1255,26 +1299,26 @@ oter Styles */
     .team {
         padding: 80px 20px;
     }
-    
+
     .team-grid {
         grid-template-columns: repeat(2, 1fr);
         gap: 25px;
     }
-    
+
     .team-image-container {
         height: 280px;
     }
-    
+
     .team-info {
         padding: 25px 20px;
     }
-    
+
     .social-link {
         width: 45px;
         height: 45px;
         font-size: 1.1rem;
     }
-    
+
     /* Touch-friendly buttons */
     .contact-phone {
         padding: 8px 12px;
@@ -1290,44 +1334,44 @@ oter Styles */
     .team {
         padding: 60px 15px;
     }
-    
+
     .team-grid {
         grid-template-columns: 1fr;
         gap: 20px;
     }
-    
+
     .team-card {
         max-width: 400px;
         margin: 0 auto;
     }
-    
+
     .team-image-container {
         height: 250px;
     }
-    
+
     .team-info {
         padding: 20px 15px;
     }
-    
+
     .team-name {
         font-size: 1.2rem;
     }
-    
+
     .team-position {
         font-size: 0.9rem;
     }
-    
+
     .team-bio {
         font-size: 0.9rem;
         margin-bottom: 15px;
     }
-    
+
     .social-link {
         width: 40px;
         height: 40px;
         font-size: 1rem;
     }
-    
+
     /* Phone numbers clickable and prominent */
     .contact-phone {
         background: var(--primary-green);
@@ -1338,7 +1382,7 @@ oter Styles */
         margin-top: 10px;
         font-size: 0.9rem;
     }
-    
+
     .contact-phone:hover {
         background: #45a049;
         color: var(--white);
@@ -1350,11 +1394,11 @@ oter Styles */
     .team-card {
         margin: 0 10px;
     }
-    
+
     .team-image-container {
         height: 220px;
     }
-    
+
     .team-info {
         padding: 15px 10px;
     }
