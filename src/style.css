@@ -361,7 +361,7 @@ h6 {
 /* Industries Section */
 .industries {
     padding: 100px 20px;
-    background: linear-gradient(135deg, var(--dark-purple), var(--accent-purple));
+    background: linear-gradient(135deg, var(--dark-white), var(--accent-purple));
 }
 
 .industries-grid {
@@ -525,24 +525,24 @@ h6 {
 }
 
 .btn-primary {
-    background: var(--primary-green);
+    background: #4c63af;
     color: var(--white);
 }
 
 .btn-primary:hover {
-    background: #45a049;
+    background: #1e0339;
     transform: translateY(-2px);
     box-shadow: 0 6px 20px rgba(76, 175, 80, 0.4);
 }
 
 .btn-secondary {
     background: transparent;
-    color: var(--primary-green);
-    border: 2px solid var(--primary-green);
+    color: var(--primary-white);
+    border: 2px solid var(--primary-purple);
 }
 
 .btn-secondary:hover {
-    background: var(--primary-green);
+    background: var(--primary-purple);
     color: var(--white);
 }
 
