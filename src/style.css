@@ -8,6 +8,7 @@
     --primary-purple: #63e;
     --secondary-purple: #4a1a5c;
     --accent-purple: #8b5cf6;
+    --dark-purple: #1e1b4b;
     --primary-green: #4CAF50;
     --whatsapp-green: #25D366;
     --accent-gold: #FFB700;
@@ -318,7 +319,7 @@ h6 {
     left: 0;
     right: 0;
     height: 4px;
-    background: linear-gradient(90deg, var(--primary-green), var(--accent-gold));
+    background: linear-gradient(90deg, var(--primary-purple), var(--accent-gold));
     transform: scaleX(0);
     transition: transform var(--transition-fast);
 }
@@ -336,7 +337,7 @@ h6 {
     width: 80px;
     height: 80px;
     margin: 0 auto 20px;
-    background: linear-gradient(135deg, var(--primary-green), var(--accent-gold));
+    background: linear-gradient(135deg, var(--dark-purple), var(--accent-purple));
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -360,7 +361,7 @@ h6 {
 /* Industries Section */
 .industries {
     padding: 100px 20px;
-    background: var(--white);
+    background: linear-gradient(135deg, var(--dark-purple), var(--accent-purple));
 }
 
 .industries-grid {
@@ -388,7 +389,7 @@ h6 {
     width: 60px;
     height: 60px;
     margin: 0 auto 15px;
-    background: linear-gradient(135deg, var(--primary-green), var(--accent-gold));
+    background: linear-gradient(135deg, var(--dark-purple), var(--accent-purple));
     border-radius: 50%;
     display: flex;
     align-items: center;
@@ -879,7 +880,7 @@ h6 {
 /* Statistics Counter Styles */
 .statistics-counter {
     padding: 80px 20px;
-    background: linear-gradient(135deg, var(--primary-dark) 0%, #0a3d02 100%);
+    background: linear-gradient(135deg, var(--dark-purple), var(--accent-purple));
     color: var(--white);
 }
 
@@ -1148,7 +1149,7 @@ h6 {
  Team Section Styles */
 .team {
     padding: 100px 20px;
-    background: var(--white);
+    background: linear-gradient(135deg, var(--dark-white), var(--accent-purple));
 }
 
 .team-grid {
@@ -1198,7 +1199,7 @@ h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(135deg, rgba(76, 175, 80, 0.9), rgba(255, 183, 0, 0.9));
+    background: linear-gradient(135deg, rgba(17, 4, 29, 0.9), rgba(59, 1, 102, 0.9));
     display: flex;
     align-items: center;
     justify-content: center;
