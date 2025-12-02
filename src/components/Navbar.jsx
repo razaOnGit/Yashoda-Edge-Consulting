@@ -10,7 +10,7 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <div className="logo">
-                <img src="/Logo.jpeg" alt="Yashoda Edge Consulting" />
+                <img src="/logo2.jpeg" alt="Yashoda Edge Consulting" />
             </div>
 
             <div className={`nav-items ${isMenuOpen ? 'active' : ''}`}>
