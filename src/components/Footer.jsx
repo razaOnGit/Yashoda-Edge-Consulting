@@ -7,11 +7,21 @@ const Footer = () => {
         <div className="footer-content">
           <div className="footer-section">
             <div className="footer-logo">
-              <img src="/logo.svg" alt="Yashoda Edge Consulting" />
+              <img
+                src="/Logo.jpeg"
+                alt="Yashoda Edge Consulting"
+                style={{
+                  width: '150px',
+                  height: 'auto',
+                  marginBottom: '10px',
+                  borderRadius: '8px',
+                  objectFit: 'contain'
+                }}
+              />
               <p>Empowering businesses with innovative solutions and strategic consulting.</p>
             </div>
           </div>
-          
+
           <div className="footer-section">
             <h4>Services</h4>
             <ul>
@@ -21,7 +31,7 @@ const Footer = () => {
               <li><a href="#analytics">Data Analytics</a></li>
             </ul>
           </div>
-          
+
           <div className="footer-section">
             <h4>Industries</h4>
             <ul>
@@ -31,7 +41,7 @@ const Footer = () => {
               <li><a href="#manufacturing">Manufacturing</a></li>
             </ul>
           </div>
-          
+
           <div className="footer-section">
             <h4>Contact Info</h4>
             <div className="contact-info">
@@ -47,7 +57,7 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        
+
         <div className="footer-bottom">
           <p>&copy; 2025 Yashoda Edge Consulting. All rights reserved.</p>
           <div className="footer-links">
