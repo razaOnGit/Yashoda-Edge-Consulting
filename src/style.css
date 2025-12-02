@@ -4,18 +4,27 @@
 
 /* CSS Variables */
 :root {
-    --primary-dark: rgb(6, 28, 1);
+    --primary-dark: #000000;
+    --primary-purple: #63e;
+    --secondary-purple: #4a1a5c;
+    --accent-purple: #8b5cf6;
     --primary-green: #4CAF50;
     --whatsapp-green: #25D366;
     --accent-gold: #FFB700;
-    --text-light: beige;
-    --text-grey: grey;
-    --white: white;
-    --dark-bg: #020f06;
-    --card-bg: #f8f9fa;
-    --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.2);
-    --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.15);
-    --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.25);
+    --accent-cyan: #06b6d4;
+    --text-light: #e5e7eb;
+    --text-grey: #9ca3af;
+    --text-dark: #1f2937;
+    --white: #ffffff;
+    --dark-bg: #000000;
+    --card-bg: rgba(255, 255, 255, 0.1);
+    --card-bg-solid: rgba(30, 30, 50, 0.8);
+    --glass-bg: rgba(255, 255, 255, 0.05);
+    --border-color: rgba(255, 255, 255, 0.1);
+    --shadow-sm: 0 2px 10px rgba(0, 0, 0, 0.3);
+    --shadow-md: 0 4px 20px rgba(0, 0, 0, 0.4);
+    --shadow-lg: 0 8px 30px rgba(0, 0, 0, 0.5);
+    --shadow-purple: 0 4px 20px rgba(99, 102, 238, 0.3);
     --transition-fast: 0.3s ease;
     --transition-smooth: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
     --font-heading: 'Manrope', sans-serif;
@@ -29,6 +38,26 @@
     box-sizing: border-box;
 }
 
+/* App Container */
+.App {
+    position: relative;
+    min-height: 100vh;
+}
+
+/* Radial Gradient Background */
+.app-background {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: -10;
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(125% 125% at 50% 10%, #000 40%, #63e 100%);
+    pointer-events: none;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -38,6 +67,7 @@ body {
     line-height: 1.6;
     color: #333;
     overflow-x: hidden;
+    background: transparent;
 }
 
 h1,
@@ -193,7 +223,7 @@ h6 {
 
 /* Hero Section */
 .hero {
-    background: linear-gradient(135deg, var(--primary-dark) 0%, #0a3d02 50%, var(--primary-green) 100%);
+    background: transparent;
     min-height: 100vh;
     display: flex;
     align-items: center;
@@ -202,17 +232,6 @@ h6 {
     color: var(--white);
     position: relative;
     overflow: hidden;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
-    opacity: 0.3;
 }
 
 .hero-content {
