@@ -8,7 +8,7 @@ const Footer = () => {
           <div className="footer-section">
             <div className="footer-logo">
               <img
-                src="/Logo.jpeg"
+                src="/logo2.jpeg"
                 alt="Yashoda Edge Consulting"
                 style={{
                   width: '150px',

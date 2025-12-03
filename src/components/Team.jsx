@@ -6,19 +6,21 @@ const Team = () => {
             id: 1,
             name: 'Mr. Ritesh Kumar Bharti',
             position: 'Founder & CEO',
-            phone: '+91 9625120724',
+            phone: '+919625120724',
             email: 'bhartiritesh94@gmail.com',
-            linkedin: 'https://www.linkedin.com/in/ritesh-bharti-40367a244?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
-            image: '/ritesh.jpg',
+            linkedin: 'https://www.linkedin.com/in/ritesh-bharti-40367a244',
+            whatsapp: '919625120724',
+            image: '/ritesh2.jpeg',
             description: 'Visionary leader with 10+ years of expertise in recruitment and workforce solutions across India.'
         },
         {
             id: 2,
             name: 'Mr. Nihal Srivastava',
             position: 'Managing Director',
-            phone: '+91 9006943294',
+            phone: '+919006943294',
             email: 'nihalsrivastava.ns@gmail.com',
-            linkedin: 'https://www.linkedin.com/in/nihal-srivastava-017357301?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app',
+            linkedin: 'https://www.linkedin.com/in/nihal-srivastava-017357301',
+            whatsapp: '919006943294',
             image: '/nihal.jpg',
             description: 'Strategic director driving innovation in comprehensive staffing and recruitment solutions.'
         }
@@ -43,14 +45,44 @@ const Team = () => {
                                 />
                                 <div className="team-overlay">
                                     <div className="team-social">
-                                        <a href={`tel:${member.phone}`} className="social-link phone-link">
+                                        {/* Phone */}
+                                        <a
+                                            href={`tel:${member.phone}`}
+                                            className="social-link"
+                                            title="Call"
+                                        >
                                             📞
                                         </a>
-                                        <a href={`mailto:${member.email}`} className="social-link">
+                                        
+                                        {/* Email */}
+                                        <a
+                                            href={`mailto:${member.email}`}
+                                            className="social-link"
+                                            title="Email"
+                                        >
                                             ✉️
                                         </a>
-                                        <a href={member.linkedin} className="social-link">
-                                            💼
+                                        
+                                        {/* LinkedIn */}
+                                        <a
+                                            href={member.linkedin}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="social-link"
+                                            title="LinkedIn"
+                                        >
+                                            🔗
+                                        </a>
+                                        
+                                        {/* WhatsApp */}
+                                        <a
+                                            href={`https://wa.me/${member.whatsapp}`}
+                                            target="_blank"
+                                            rel="noopener noreferrer"
+                                            className="social-link whatsapp"
+                                            title="WhatsApp"
+                                        >
+                                            💬
                                         </a>
                                     </div>
                                 </div>
